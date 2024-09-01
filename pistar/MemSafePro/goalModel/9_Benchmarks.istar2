@@ -1,0 +1,11 @@
+1 actor {成都研究所存储部门}  ~>10
+    2 goal {Docker化，用C语言重写}  |
+        3 goal {Rust附能}  |
+            4 task {项目规模：黑科技 Rust语言10人，了解C，Go} 
+        5 goal {容器轻量化}  +8 +7
+    6 goal {标准制定，WebAssembly}  +7
+    7 quality {安全性} 
+    8 quality {性能提升} 
+9 resource {存储项目试点}  ~>1
+10 task {驻场开发} 
+

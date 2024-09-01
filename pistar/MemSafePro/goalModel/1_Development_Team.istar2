@@ -1,0 +1,30 @@
+1 actor {Product Dev Team}{产品开发团队}  ~>28 ~>29 ~>30
+    2 goal {Develop Software}{软件开发}  & ++20
+        3 goal {Programming Language}{编程语言}  |
+            4 task {Checked C}  ++19 +18 ++22
+            5 task {C/C++}  -18 ++19
+            6 task {Rust}  | +18 ++19
+                7 goal {技术路线}  |
+                    8 goal {路径1 增强C/C++} 
+                    9 goal {路径2 切换Rust} 
+        10 goal {Project Type}{项目类型}  |
+            11 task {System}{系统软件} 
+            12 task {Open Source}{开源} 
+        13 goal {Business}{业务}  |
+            14 task {存量代码} 
+            15 goal {编程模式}  |
+                16 task {OOP} 
+                17 task {FP} 
+    18 quality {Memory Safety}{内存安全} 
+    19 quality {Efficiency}{性能} 
+    20 quality {Flexibility} 
+    21 goal {Runtime overhead} 
+    22 quality {runtime check} 
+    23 quality {Syntax} 
+    24 quality {Safety} 
+    25 quality {Automation} 
+    26 goal {Once-for-all} 
+    27 goal {Generating TXL rules (Learning by Examples)} 
+28 resource {可信语言编译工具}{Compiler Tools for Trustworthy Programming Languages}
+29 resource {必备产品Rust基础组件}{Mandatory Product Components in Rust (DOPRA_R)} 
+30 resource {内存安全可信编程语言}{Trustworthy Memory Safe Programming Languages}

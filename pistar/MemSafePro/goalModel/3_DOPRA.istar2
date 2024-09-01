@@ -1,0 +1,31 @@
+1 actor {DOPRA} 
+    2 goal {提供必备的产品Rust基础组件}  &
+        3 goal {并发框架}  &
+            4 task {调度区} 
+            5 task {调度策略} 
+            6 task {负载均衡} 
+            7 task {容错机制} 
+        8 goal {编程框架}  {不属于本项目} &
+            9 task {地址表管理} 
+            10 task {优先级邮箱} 
+            11 task {消息收发} 
+            12 task {流控与反压} 
+        13 goal {通信框架}  &
+            14 task {进程内通信} 
+            15 task {进程间通信} 
+            16 task {板间通信} 
+        17 goal {DFx框架}  &
+            18 task {日志服务}  ~>151
+            19 task {黑匣子服务} 
+            20 task {系统监控服务} 
+        21 goal {热补丁}  &
+            22 task {补丁管理和上线} 
+            23 task {热补丁制作} ~>152
+        24 goal {内存分配管理}  &
+            25 task {扩展回收} 
+            26 task {过载控制} 
+            27 task {内存统计} 
+            28 task {申请释放} 
+31 resource {必备产品Rust基础组件}{Mandatory Product Components in Rust (DOPRA_R)}  ~>2
+151 resource {Aspect-oriented Rust}
+152 resource {函数命名规则}

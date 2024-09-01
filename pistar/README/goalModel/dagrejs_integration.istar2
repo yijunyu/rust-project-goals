@@ -1,0 +1,9 @@
+
+1 * agent {dagrejs integration}  {https://github.com/dagrejs}@201,1 
+    2 goal {Layout of nodes}  &
+        3 goal {Interactive Configuration}  | +7
+            4 task {horizontal layout}  {LR}
+            5 task {vertical layout}  {TB}
+        6 task {Model generation} 
+    7 quality {Flexibility} 
+8 resource {dagre library}  {https://github.com/dagrejs/dagre}@51,58.5  ~>2

@@ -1,0 +1,26 @@
+1 actor {南大左志强} 
+    2 quality {C/C++零代价抽象原则} 
+    3 goal {Static Analysis静态检测}  | ++9 +10 +7 +8
+        4 task {PC-Lint} 
+        5 task {Coverity} 
+        6 task {Frama-C} 
+    7 quality {False Positive}{误报} 
+    8 quality {False Negative}{漏报} 
+    9 quality {Slow Compilation}{编译速度慢} 
+    10 quality {Overhead} 
+    11 goal {Safe Pointer}  & ++2
+        12 task {C++标准库函数的使用/安全函数（CSEC涉及到的列表，内存函数）替换}  {是否安全？怎样调用安全？}
+        13 task {Rust启发: Explicit safe instruction 检验显性化}  |
+            14 task {不校验vec[n] panic array[n]} 
+            15 task {动态校验vec[n].ok_or(e) array.at[n]} 
+            16 task {vec[n].unwrap_or(m) 编译校验array.ensured_at[n]}  {Zhiqiang：buffer overflow has to be dealt with through dynamic checks because of input dependency, even for Rust pointer dereferrence}
+        17 goal {Generating Contract 生成契约}  |
+            18 task {Type Systems 类型系统} 
+            19 task {Pre/Post Condition} 
+            20 task {Annotations} 
+            21 task {Assert} 
+        22 goal {Feedback Mechanism校验失败后怎样反馈：异常处理} 
+23 resource {演示所需编译支撑模块}  ~>1
+24 resource {增强集程序样例}  ~>1
+25 resource {编译模块描述文档}  ~>1
+

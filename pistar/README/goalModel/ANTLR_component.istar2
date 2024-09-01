@@ -1,0 +1,7 @@
+1 * agent {ANTLR component}{https://github.com/antlr}
+    2 00ff00 goal {Support iStar 2.0 syntax} &
+        3 00ff00 task {Generate JavaScript Parser} 
+        4 00ff00 task {Create iStar 2.0 Visitor}  &
+            5 00ff00 task {Visitor for Actors} 
+            6 00ff00 task {Visitor for Intentions} 
+7 resource {ANTLR4 Grammar for iStar 2.0}  {https://github.com/antlr/antlr4}@51,58  ~>2

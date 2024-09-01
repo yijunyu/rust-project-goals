@@ -1,0 +1,11 @@
+1 actor {Lero}
+    11 goal {Software Engineering} &
+        2 task {Assurance Cases / Risk Assessment}
+        3 task {Inner Source}
+        4 task {Onboarding Software Engineers}
+        5 task {Reference Architecture for AI}
+        6 task {Requirements Engineering for AI}
+91 resource {Literature Surveys towards High Quality Publications} ~>1
+92 task {Case Studies (Contexts)}  ~>2 ~>3
+93 resource {Prototype Tools (Product, Process) } ~>5
+94 task {Best Practices (People) } ~>4

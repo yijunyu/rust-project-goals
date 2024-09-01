@@ -1,0 +1,27 @@
+{
+  "name": "piStar",
+  "version": "1.0.0",
+  "description": "This is an open-source goal modelling tool. Its key distinguishing characteristics are:   - it runs entirely on the browser, thus no installation needed   - high visual fidelity (we want your diagrams to be pretty, even when printed)   - supports the [iStar 2.0 standard](https://sites.google.com/site/istarlanguage/)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "local-web-server": "^4.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yijunyu/piStar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yijunyu/piStar/issues"
+  },
+  "homepage": "https://github.com/yijunyu/piStar#readme"
+}

@@ -1,0 +1,45 @@
+1 agent {Ruiping IT, Finland}
+    2 quality {Readability/no repeated headers}{可读性} 
+    3 quality {Executable}{可执行} 
+    4 quality {Correctness/coverage}{正确性} 
+    5 quality {Performance}{性能} 
+    6 quality {Safety ratio}{安全性} 
+    7 task {SCRust}  & ++5
+        8 task {Transpilation to safer C}  & ++4 +6
+            9 task {Checked C} 
+        10 task {Transpilation c2rust}  {R1：尽可能自动化的将C代码转换为safe Rust代码。对于无法转换的部分，尽可能准确的提示哪部分需要人工改写，支持辅助式(反馈式)重构
+R2：对于原始C代码和转换后的Rust代码，工具验证是否功能等价。对于无法确定的部分给出提示，以供开发补充测试
+R3：对于C接口，自动化的封装为safe Rust接口，对于无法确定语义的部分（比如指针目标是否为数组），通过人工参与指定语义。对于存在风险的给出提示} & ++3 +6
+            11 task {Macro Expansion}{宏展开}  -2
+            12 100% task {Semantic Preserving}{语义保持} 
+            13 50% task {Macro Expansion Patterns} 
+            14 100% task {c2rust} {https://c2rust.com/
+https://c2rust.com/manual/       
+https://c2rust.com/manual/docs/c2rust-overview.png     
+            }
+            15 task {RFC} 
+        16 task {Rust refactoring}{https://c2rust.com/manual/c2rust-refactor/
+        }  & ++2 ++6
+            17 50% goal {Safe refactoring patterns} {
+                https://c2rust.com/manual/c2rust-refactor/commands.html
+            }  ~>31
+        18 50% task {Rust Beautifying}  & ++2 ++23 +24
+            19 50% task {citrus-rs}  +2 --3
+            20 50% goal {Pretty Print Patterns}  +2 ++26 ++29
+        21 task {Rust cross check}  ++6
+        22 10% task {Benchmarks} 
+    23 100% quality {Traceability to C/C++}{可回溯性} 
+    24 100% quality {Compilation Unit Correspondence}{模块对应关系（不包括头文件）} 
+    25 100% task {CSmith}  +4
+    26 100% quality {Manually specifiable} 
+    27 100% resource {libsvg 2016}  {https://www.reddit.com/r/rust/comments/59d2ql/librsvg_gets_rusty/
+http://videos.guadec.org/2018/GUADEC%202018%20-%20Federico%20Mena%20Quintero%20-%20Patterns%20of%20refactoring%20C%20to%20Rust-5mVMycYmoWE.mp4} -o22
+    28 100% resource {test suite}  -o22
+    29 100% quality {Modifiable/Addable/Removable} 
+30 resource {Safe C2Rust Transpiler}  ~>7
+31 resource {Safe refactoring patterns}
+32 resource {Benchmarks}  ~>22
+33 resource {Macro Expansion Patterns} ~>13
+34 resource {Pretty Print Patterns} ~>20
+35 resource {Generated Benchmarks}  ~>22
+

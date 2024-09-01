@@ -1,0 +1,8 @@
+1 agent {张汉东} 
+   11 task {优秀案例} 
+   12 task {驻场开发}
+   13 task {社区建设}{Rust Foundation}
+2 resource {优秀案例}  ~>11
+3 resource {驻场开发}  ~>12
+4 resource {社区建设}{Rust Foundation} ~>13
+

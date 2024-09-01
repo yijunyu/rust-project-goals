@@ -1,0 +1,16 @@
+1 TB actor {Jim Cordy}
+    11 goal {C to Rust for Selected Code by Source-to-Source Transformation System in TXL}  &
+        111 100% task {Scalable Parsers} 
+        112 0% task {C2Rust Transformation Rules} |
+            1121 task {Safe refactoring patterns}{https://c2rust.com/manual/c2rust-refactor/commands.html#set_mutability}
+            1122 task {Macro Expansion Patterns}  ~>7
+            1123 task {Pretty Print Patterns}  ~>6
+        113 task {Preserve comments and traceability to C} ++12
+        114 task {Chairmarks / Code Snippets}  ~>5
+    12 quality {High fidelity to C code}
+2 resource {Source-to-Source Transformation System in TXL}{http://txl.ca}  ~>11
+3 resource {Safe refactoring patterns}   ~>1121
+4 resource {Scalable Parsers} ~>111
+5 resource {Benchmarks} 
+6 resource {Pretty Print Patterns}  
+7 resource {Macro Expansion Patterns}

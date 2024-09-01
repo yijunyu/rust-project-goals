@@ -1,0 +1,8 @@
+{
+    "files.exclude": {
+        "symlinks": true
+    },
+    "files.watcherExclude": {
+        "symlinks": true
+    }
+}

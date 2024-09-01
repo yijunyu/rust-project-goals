@@ -1,0 +1,7 @@
+1 actor {数通}{DataCom} 
+    2 goal {场景}  &
+        3 task {场景1} 
+        4 task {场景2} 
+5 resource {Rust代码} ~>3
+6 resource {DSL代码} ~>4
+

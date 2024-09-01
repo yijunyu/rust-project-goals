@@ -1,0 +1,2 @@
+node istar2.js $1 ../tool/goalModel.js
+open ../tool/index.html

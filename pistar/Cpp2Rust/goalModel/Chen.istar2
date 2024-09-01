@@ -1,0 +1,7 @@
+1 * agent {Chen Zhe}
+  11 goal {Enhance C++ Memory Safety} &
+    111 task {Identify Safe C++ Core} ++12
+    112 task {Supporting more Safe C++ features} ++12
+  12 quality {Safety}
+2 task {Identify Safe C++ Core} ~>111
+3 task {Supporting more Safe C++ features} ~>112

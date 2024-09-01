@@ -1,0 +1,11 @@
+1 * agent {VSCode marketplace}  {Install "Live Server Preview" extension;
+Install "Save and Run" extension;
+Open tool/index.html using Live Server Preview;
+Configure Run on Save extension to call "make" when any .istar2 file is saved
+Open "README.istar2", edit the file
+When saving the file, the default rule in "Makefile" will update ../goalModel.js, which will be reloaded into the HTML diagram.
+}@1,1 
+    2 goal {Install extensions}  &
+        3 task {Save and Run} 
+        4 task {Live Server Preview} 
+5 resource {VSCode IDE} @151,141.5  ~>1

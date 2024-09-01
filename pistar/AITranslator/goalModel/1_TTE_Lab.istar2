@@ -1,0 +1,32 @@
+1 actor {TTE Lab}
+    11 goal {AI Machine Translation}{机器翻译}  & +12
+        111 100% goal {Parser}{代码解析} |
+            1111 100% task {ANTLR4} 
+            1112 100% task {Bison/YACC} 
+            1113 100% task {syn-serde} 
+            1114 100% task {TXL}
+        112 goal {Learning Representation}{模型表示} |
+            1121 task {Trees: TBCNN [AAAI'16]} {https://github.com/bdqnghi/bi-tbcnn
+                https://bdqnghi.github.io/files/SANER_2019_bilateral_dependency.pdf
+            }
+            1122 task {Graphs: GGNN [ICLR'18]} {https://github.com/bdqnghi/ggnn.tensorflow
+                https://bdqnghi.github.io/files/SANER_2019_bilateral_dependency.pdf
+            }
+            1123 task {Capsules: TreeCaps [NIPS20]} {https://github.com/bdqnghi/treecaps
+                https://arxiv.org/pdf/1910.12306.pdf
+            }
+        113 goal {Training /Testing Neural models}{训练/评估模型}  |
+            1131 task {Accuracy} 
+            1132 task {BLEU} 
+        114 goal {Related SE Tasks} |
+            1141 task {Cross-language API Mapping} {
+                https://bdqnghi.github.io/files/FSE_2019.pdf
+            }
+            1142 task {Cross-language Clone Detection} {
+                https://arxiv.org/pdf/1910.12306.pdf
+            }
+            1143 task {Cross-language Algorithm Classification} {
+                https://bdqnghi.github.io/files/SANER_2019_bilateral_dependency.pdf
+            }
+        115 FA9169 task {Labelled Benchmarks}{标注样本程序} 
+    12 quality {Cross-language Code Completion with collaborative machine learning models, e.g., from pseudo code to Rust or C/C++} 

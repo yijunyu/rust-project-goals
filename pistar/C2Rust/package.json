@@ -1,0 +1,27 @@
+{
+  "name": "pistar",
+  "version": "1.0.0",
+  "description": "A graph editor for i* 2.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://bitbucket.org/yijunyu/pistar",
+  "keywords": [
+    "Electron",
+    "iStar 2.0"
+  ],
+  "author": "yijunyu",
+  "devDependencies": {
+    "electron": "^9.1.2",
+    "electron-builder": "^22.8.0"
+  },
+  "dependencies": {
+    "antlr4": "^4.8.0",
+    "dagre": "^0.8.5",
+    "local-server": "^0.1.8",
+    "local-web-server": "^4.2.1",
+    "uuid": "^8.3.0",
+    "xvfb-maybe": "^0.2.1"
+  }
+}

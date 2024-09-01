@@ -1,0 +1,12 @@
+.antlr/
+iStar2Lexer.tokens
+iStar2Parser.tokens
+pom.xml
+iStar2Lexer.js
+iStar2Parser.js
+iStar2ParserVisitor.js
+iStar2Lexer.interp
+iStar2Parser.interp
+*.istar2
+*.json
+*.js

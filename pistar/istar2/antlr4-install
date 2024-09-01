@@ -1,0 +1,16 @@
+#!/bin/bash
+VERSION=4.7.2
+command -v antlr4 || {
+	if [ ! -f $HOME/lib/antlr4-$VERSION-complete.jar ]; then
+		mkdir -p $HOME/lib
+		cd $HOME/lib > /dev/null
+		# curl -O https://www.antlr.org/download/antlr-4.8-complete.jar
+		curl -O https://repo1.maven.org/maven2/org/antlr/antlr4/$VERSION/antlr4-$VERSION-complete.jar
+		cd -
+	fi
+	export CLASSPATH=".:$HOME/lib/antlr4-$VERSION-complete.jar:$CLASSPATH"
+	alias antlr4="java -jar $HOME/lib/antlr4-$VERSION-complete.jar"
+	mkdir -p $HOME/bin
+	cp antlr4 $HOME/bin
+}
+java -Xmx2254m -jar $HOME/lib/antlr4-$VERSION-complete.jar $*

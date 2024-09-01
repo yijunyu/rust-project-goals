@@ -1,0 +1,111 @@
+1 actor {Smart home system} @329,36 
+    2 goal {Temperature be managed} @588,132 |
+        3 task {Control windows} @476,205 &
+            4 task {Open window} @440,297
+            5 task {Close window} @549,307 +13 ~>105
+        6 task {Control fan} @674,221 &
+            7 task {Turn on fan} @651,303 -13 ~>100
+            8 task {Turn off fan} @747,353 +13 ~>101
+        9 task {Control heating device} @811,174 &
+            10 task {Turn on heating device} @813,281 -13 ~>98
+            11 task {Turn off heating device} @901,228 +13 ~>99
+    12 quality {Reliability} @883,44
+    13 quality {Energy spent wisely} @453,36 +71
+    14 quality {Adaptability} @1018,79 +12
+    15 task {Prevent failures} @1180,102 +14
+    16 task {Select best behaviour according to the environment} @1143,175 & +14
+        17 task {Get enviroment data} @1164,273 ~>93
+    18 goal {Lights be managed} @1008,250 |
+        19 task {Manage lights} @1079,323 & +13
+            20 task {Select lights policy} @883,344 &
+                21 task {Occupancy simulation} @815,420 +26
+                22 task {Lights on by occupancy} @910,430
+            23 task {Control lights} @1070,391 &
+                24 task {Turn on light} @1014,456 ~>95
+                25 task {Turn off light} @1156,453 ~>96
+    26 quality {Safety} @612,341
+    27 task {Manage fire incident} @605,443 & +26
+        28 task {Close gas valves} @453,526
+        29 task {Unlock doors} @583,657
+            30 task {Open window} @440,297 ~>104
+        31 task {Deactivate power outlet} @673,632
+        32 task {Activate alarm} @807,567
+        33 task {Notify fire department} @743,460 ~>83
+        34 task {Notify tenants} @482,431 ~>82
+    35 task {Control gas valves} @410,367 &
+        36 task {Open gas valves} @368,483 ~>102
+        37 task {Close gas valves} @453,526 ~>103
+    38 task {Control doors lock} @465,591 &
+        39 task {Lock doors} @470,685 ~>108
+        40 task {Unlock doors} @583,657 ~>109
+    41 task {Control power outlet} @695,547 & +13
+        42 task {Deactivate power outlet} @673,632 ~>106
+        43 task {Activate power outlet} @773,610 ~>107
+    44 task {Control alarm} @836,496 &
+        45 task {Activate alarm} @807,567 ~>110
+        46 task {Deactivate alarm} @913,561 ~>111
+    47 quality {Entertainment} @1051,518
+    48 task {Manage sound system} @940,613 & +47
+        49 task {Play music} @836,691 ~>94
+        50 task {Customize playlist according to preferences} @951,693 &
+            51 task {Select songs manually} @911,801
+            52 task {Select songs by preferences} @1038,798 ~>91
+        53 task {Direct sound only to occupied rooms} @1045,731 ~>97
+    54 task {Schedule social event with a friend} @1138,605 & +47
+        55 task {Fast response} @1090,672 ~>90
+        56 task {Invite friend} @1193,678 ~>92
+    57 goal {Tenant is well nourished} @725,678 |
+        58 task {Manage tenant nutrition} @618,738 &
+            59 goal {Provide meals} @484,780 |
+                60 task {Assist the tenant in cooking the meal} @392,850 & +71
+                    61 task {Provide recipe} @365,961
+                    62 task {Get food stock status} @441,1080
+                63 task {Request restaurant meal} @546,884 -71 ~>86
+            64 task {Suggest daily menu} @575,835
+            65 task {Keep track of consumed food} @759,846 &
+                66 task {Monitor food consumption} @809,941
+                67 task {Make a log of food consumption} @701,932 ~>85
+            68 task {Keep track of consumed medicines} @872,857 &
+                69 task {Monitor medicine consumption} @983,994
+                70 task {Make a log of medicine consumption} @854.5,994 ~>87
+    71 quality {Save money} @375,677.5
+    72 quality {Customization} @329,1064 ~>89
+    73 goal {Manage food stock supply} @602,937 |
+        74 task {Buy food when required} @537,1010 &
+            75 task {Order food} @585,1092
+                    76 task {Get food stock status} @441,1080 ~>84
+77 actor {Data storage} @755,1296 
+78 actor {Communication} @1599,839 
+79 actor {Preference manager} @334,1349  ~>88
+80 actor {Monitor} @1495,222 
+81 actor {Actuator} @60,533 
+82 task {Send fire notification to fire department} @1358,892  ~>78
+83 task {Send fire notification to tenants} @1409,681  ~>78
+84 resource {Food stock status} @514,1231  ~>77
+85 task {Store food consumption data} @646,1181  ~>77
+86 task {Request restaurant meal} @1372,984  ~>78
+87 task {Store medicine consumption data} @784,1166  ~>77
+88 resource {Preferences} @520,1330  ~>77
+89 quality {Customization} @333,1213  ~>79
+90 quality {Fast response} @1383,819  ~>78
+91 task {Get musical preferences} @851,1396  ~>79
+92 task {Invite friend} @1392,759  ~>78
+93 goal {Enviroment monitored} @1333,174  ~>80
+94 task {Play music} @195,1000  ~>81
+95 task {Turn on light} @215,425  ~>81
+96 task {Turn off light} @216,477  ~>81
+97 task {Direct sound only to occupied rooms} @163,1053  ~>81
+98 task {Turn on heating device} @205,214  ~>81
+99 task {Turn off heating device} @213,268  ~>81
+100 task {Turn on fan} @197,102  ~>81
+101 task {Turn off fan} @203,161  ~>81
+102 task {Open gas valves} @212,529  ~>81
+103 task {Close gas valves} @214,576  ~>81
+104 task {Open window} @214,323  ~>81
+105 task {Close window} @215,373  ~>81
+106 task {Deactivate power outlet} @209,803  ~>81
+107 task {Activate power outlet} @208,743  ~>81
+108 task {Lock doors} @210,868  ~>81
+109 task {Unlock doors} @202,938  ~>81
+110 task {Activate alarm} @213,626  ~>81
+111 task {Deactivate alarm} @212,688  ~>81

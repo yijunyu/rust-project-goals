@@ -1,0 +1,20 @@
+1 * agent {PKU}
+    11 goal {Translating Safe C++ Subset to Rust}  & ++12 ++13 ++14
+        111 task {Identify Safe C++ Core} ~>2
+        112 task {Identify Rust Core} ~>3
+        114 task {Bridging Safe C++ Core and Rust Cores} &
+            1141 task {Desugaring Safe C++ Core into Rust Core}
+            1142 task {Sugaring Rust Core into Safe C++ subset} 
+            1143 task {Addressing Missing Mapping between Safe C++ Subset and Rust Cores} 
+        115 task {Supporting more Safe C++/Rust features} ~>4 
+#                                          +15
+    12 quality {100% Memory Safe}
+    13 quality {100% Performance vs C++}
+    14 quality {Familiar Experience in C++ Development}
+#    15 quality {Fuller support for C++/Rust}
+2 task {Identify Safe C++ Core}
+3 task {Identify Rust Core}
+4 task {Supporting more Safe C++ features}
+5 resource {Translate C++ to Rust} ~>11
+
+

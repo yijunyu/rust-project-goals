@@ -1,0 +1,12 @@
+1 actor {云核} 
+    11 goal {调研C/C++移植性能影响}{Survey C/C++ Migration} &
+        111 task {选取Flow模块}{Select Flow Module}  +14
+        112 task {算法改写}{Algorithm Rewrite} --12 ++15
+        113 task {集成测试}{Integration Test}  ++13
+        114 task {Rust Compiler} ++13
+    12 quality {Automated}{全部手工} 
+    13 quality {正确性} {Correctness}
+    14 quality {On Performance Bottleneck} 
+    15 quality {Acceptable Performance} 
+2 resource {flow项目} ~>11
+

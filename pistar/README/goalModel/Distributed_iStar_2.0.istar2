@@ -1,0 +1,16 @@
+1 * 96FAE7 agent {Distributed iStar 2.0}  {http://mcs.open.ac.uk/yy66}@1,1 
+    2 goal {Apply iStar 2.0 to Requirements Elicitation from Distributed Organisations}  &
+        3 task {Layout of nodes}  +9 ~>15
+        4 task {Distributed iStar 2.0}  +9 +10 +11
+        5 task {VS Code Integration}  +9 ~>16
+        6 task {Parameterise the input files for NodeJS}  +13
+        7 task {Assign appropriate color to indicate progress}  +9
+        8 task {Support iStar 2.0}  ++12 ~>14
+    9 quality {Usability} 
+    10 quality {Expressiveness} 
+    11 quality {Scalability} 
+    12 quality {Standardisation} 
+    13 quality {Maintainability} 
+14 resource {ANTLR4 Grammar for iStar 2.0}  {https://github.com/antlr/antlr4}@575,107.75 
+15 resource {dagre library}  {https://github.com/dagrejs/dagre}@584.5,161.75 
+16 resource {VSCode IDE} @584.5,208.75 

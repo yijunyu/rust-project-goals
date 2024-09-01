@@ -1,0 +1,35 @@
+1 actor {TTE Lab}
+    2 goal {Trustworthy Programming Language}{可信编程语言}  & ++16
+        3 goal {Memory Safe Enhancement of C/C++}{内存安全语言增强集}  &
+            4 task {Safety-enhancing C/C++ subset}{设计语言增强集}  ~>23 ~>29
+            5 task {Demonstration Compiler Prototype}{演示原型编译模块}  ~>22 ~>30 ~>31
+        6 goal {Engineering Capability and C2Rust Translator} {工程能力和语言转换工具}  &
+            61 task {Engineering Capabilities}{工程能力}  &
+                8 task {Programming Conventions}{编程规范} 
+                9 task {Translation of Classic Books}{经典书籍翻译} 
+                10 task {Consulting Experiences}{驻场项目顾问,交付优秀实践}  ~>24
+                11 task {Rust Code/Document Sharing Community}{Rust代码/文档分享社区}  ~>27 
+            62 task {C2Rust Language Translator}{语言转换工具}  ++17 ++18 ~>32 ~>33 ~>34
+            63 task {C2Rust Benchmarks Performance Evaluation}{性能测试}  & +18 +17
+                14 task {Benchmarks Platform}{Benchmarks平台}
+                15 task {Pilot Projects Comparison}{华为试点项目对比}  ~>25 ~>26
+            64 task {Unsafe Rust代码安全性动态检测} ~>36 +16
+    16 quality {Memory Safe}{内存安全} 
+    17 quality {Functional Requirements}{功能需求}
+    18 quality {Quality Requirements}{质量需求}
+    19 0% quality {2020}  +18 +17
+    20 0% quality {2021}  ++18 ++17
+    21 0% quality {Challenging Quality}  +18
+22 resource {演示所需编译支撑模块} 
+24 task {优秀案例} 
+25 resource {存储项目试点} 
+26 resource {flow项目}  
+27 task {社区建设}{Rust Foundation} 
+30 resource {增强集程序样例}  
+31 resource {编译模块描述文档} 
+32 resource {Safe C2Rust Transpiler} 
+33 resource {AI Machine Translator} 
+34 resource {Source-to-Source Transformation System in TXL} 
+35 resource {内存安全可信编程语言}{Trustworthy Memory Safe Programming Languages}  ~>2
+36 resource {Unsafe Rust代码安全性动态检测} 
+

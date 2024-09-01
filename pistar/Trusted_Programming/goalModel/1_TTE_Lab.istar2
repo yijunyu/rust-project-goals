@@ -1,0 +1,36 @@
+1 actor {TTE Lab} ~>91
+  11 goal {Trustworthiness Software Engineering} & ++12 ++13 ++14
+    2 50% goal {Programming Language} |
+        21 100% task {C/C++} -12 
+        22 20% task {Rust}  -13 -14
+    3 50% goal {Trusted Programming} | 
+        31 100% task {Hardening C/C++ Legacy Code} +12 +13
+        32 100% task {Transpiling C/C++ to Rust} 
+        33 0% task {Adopting Rust} -14 ~>92 ~>93 ~>94
+        34 0% task {Performance Engineering} -14 ~>92 ~>93 ~>94
+        35 0% task {Heterogeous Computing} -14 ~>92 ~>93 ~>94
+    4 20% goal {Intelligent Software Engineering} &
+        41 50% goal {Deep Code Learning} &
+            411 50% task {Code Search}
+            412 50% task {Clone Detection}
+            413 50% task {Algorithm Detection}
+        42 50% goal {Vulnerability Management} &
+            421 100% task {Bug Prediction}  ~>92 ~>93 ~>94
+            422 100% task {Bug Localization}  ~>92 ~>93 ~>94
+            423 50% task {Bug Repair}  ~>92 ~>93 ~>94
+            424 50% task {Vulnerability Traceability}  ~>92 ~>93 ~>94
+            425 50% task {Risk Management / Assurance Cases}  ~>92
+    5 40% goal {Software Engineering for AI} & 
+        51 0% task {Requirements Engineering} ~>92 ~>93 ~>94
+        52 100% task {Software Architecture} ~>92 ~>93 ~>94
+        53 0% task {Software Design} ~>92 ~>93 ~>94
+    6 100% goal {Software Engineer Training} &
+        61 100% task {Onboarding Developers} ~>92 ~>94
+        62 100% task {Inner Source Development} ~>92 ~>94
+  12 quality {Safety} 
+  13 quality {Performance} 
+  14 quality {Efficiency}     
+91 resource {Literature Surveys towards High Quality Publications}
+92 task {Case Studies (Contexts)}
+93 resource {Prototype Tools (Product, Process) }
+94 task {Best Practices (People) }

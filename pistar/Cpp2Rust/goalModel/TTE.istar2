@@ -1,0 +1,15 @@
+1 TB actor {TTE Lab}
+    11 goal {Memory Safe C++}  &
+       111 task {Translate C++ to Rust} +12 ++13 ~>2
+       112 task {Identify Rust Core} |
+           1121 task {Pointer Arithmatics}{指针算术}
+           1122 task {New/Delete Memory Objects}{申请、释放对象}
+           1123 task {Inheritance}{继承: more than cpp-inherit Macro expansion to Cpp}
+           1124 task {Design Patterns}{设计模式： 相互引用的数据结构，e.g., 翻转数组}
+           1125 task {Standard Library}{标准库不同}
+           1126 task {Concurrency Control}{并发机制}
+           1127 task {Template by Explicit Types rather than ducking}{明确声明每种类型支持的操作}
+    12 quality {Memory Safety}
+    13 quality {Performance}
+2 resource {Translate C++ to Rust}
+3 task {Identify Rust Core} ~>112

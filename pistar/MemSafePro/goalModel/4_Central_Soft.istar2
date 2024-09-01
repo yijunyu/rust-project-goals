@@ -1,0 +1,30 @@
+1 actor {中软} 
+    2 goal {可信语言编译工具}  &
+        3 goal {交叉编译}  &
+            4 task {支持ARM64 ILP32 后端} 
+        5 goal {性能无损的互调}  &
+            6 task {互调用的性能 Benchmark}  &
+                7 task {各种方向的函数互调用} 
+                8 task {各种参数类型的函数互调用} 
+            9 task {平台测试和调优}  &
+                10 task {X86平台} 
+                11 task {ARM平台} 
+        12 goal {Rust核心技术/能力}  &
+            121 task {新增Rust target的技术和工程能力} |
+               1211 task {面向侧面编程技术}
+               1212 task {函数命名规则} 
+            122 task {编译器技术} &
+                1221 task {宏}
+                1222 task {类型推导}
+                1223 task {类型检查}
+                1224 task {借用检查}
+                1225 task {Trait 系统}
+                1226 task {编译期计算引擎，包括Miri}
+                1227 task {MIR 优化}
+                1228 task {协程与异步}
+                1229 task {高效互调用}
+                1220 task {新硬件平台支持}
+14 resource {可信语言编译工具}{Compiler Tools for Trustworthy Programming Languages} ~>2
+151 resource {Aspect-oriented Rust} ~>1211
+152 resource {函数命名规则} ~>1212
+16 task {Unsafe Rust代码安全性动态检测} ~>1226

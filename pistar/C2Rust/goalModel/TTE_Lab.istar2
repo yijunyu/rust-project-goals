@@ -1,0 +1,55 @@
+1 TB actor {TTE Lab} @1,145.5 
+    2 goal {Trustworthy Programming Language}{可信编程语言}  & ++16
+        3 goal {Memory Safe Enhancement of C/C++}{内存安全语言增强集}  &
+            4 task {Safety-enhancing C/C++ subset}{设计语言增强集}  ~>23 ~>29
+            5 task {Demonstration Compiler Prototype}{演示原型编译模块}  ~>22 ~>30 ~>31
+        6 goal {Engineering Capability and C2Rust Translator} {工程能力和语言转换工具}  &
+            7 task {Engineering Capabilities}{工程能力}  &
+                8 task {Programming Conventions}{编程规范} 
+                9 task {Translation of Classic Books}{经典书籍翻译} 
+                10 task {Consulting Experiences}{驻场项目顾问,交付优秀实践}  ~>24
+                11 task {Rust Code/Document Sharing Community}{Rust代码/文档分享社区}  ~>27 ~>28
+            12 task {C2Rust Language Translator}{语言转换工具}  ++17 ++18 ~>32 ~>33 ~>34
+            13 task {C2Rust Benchmarks Performance Evaluation}{性能测试}  & +18 +17
+                14 task {Benchmarks Platform}{Benchmarks平台}  ~>36
+                15 task {Pilot Projects Comparison}{华为试点项目对比}  ~>25 ~>26
+    16 quality {Memory Safe}{内存安全} 
+    17 quality {Functional Requirements}{功能需求: R1. Scalability规模：支持工程级别（包括多个C/C++头文件::Y1，>=100KLOC::Y2）的转换；
+R2. Automation全自动化：从不同的C/C++构建系统（GMake::Y1，Cmake::Y2, Bazel::Y2）生成Rust的构建配置（Cargo.toml::Y2）
+R3. Executable可执行：生成的Rust代码通过编译可以执行::Y2}
+    18 quality {Quality Requirements}{质量需求: R4. Correctness正确性：自动验证（基于MVEE）转换后功能与C/C++代码相同::Y1; 原各级测试（Unit Test/Module Test/Integration Test/System Test）仍可以通过::Y1;
+ R5. Safe ratio安全性比例：safe Rust代码比例达到20%以上::Y1，遗留unsafe Rust代码需按照最小化原则与safe Rust 代码隔离，并给出相应unsafe代码提示以辅助重构::Y2;
+R6. Readability可读性：头文件需去重；应与C代码保持相同结构::Y1；保留C/C++中的函数和结构体的注释::Y1，宏应转换为常量或者Rust宏::Y1，代码风格满足Rust 代码风格要求::Y2，
+保持Rust到C/C++的可回溯性::Y1；
+R7. Performance性能：采用Benchmarks验收，与C代码性能降低不能超过20%}
+    19 0% quality {2020}  {R1. Scalability规模：支持工程级别（包括多个C/C++头文件；
+R2. Automation全自动化从C/C++构建系统（GMake);
+R3. Executable可执行：生成的Rust代码通过编译;
+R4. Correctness正确性：自动验证（基于MVEE）转换后功能与C/C++代码相同, 原各级测试（Unit Test/Module Test/Integration Test/System Test）仍可以通过;
+R5. Safe ratio安全性比例：safe Rust代码比例达到20%以上;
+R6. Readability可读性：头文件需去重；应与C代码保持相同结构；保留C/C++中的函数和结构体的注释，宏应转换为常量或者Rust宏，
+保持Rust到C/C++的可回溯性；
+R7. Performance性能：采用Benchmarks验收，与手工改写的Rust代码比性能降低不能超过20%} +18 +17
+    20 0% quality {2021}  {R1. Scalability规模：>1KLOC的转换；
+R2. Automation全自动化：从不同的C/C++构建系统（Cmake:, Bazel）生成Rust的构建配置（Cargo.toml）
+R3. Executable可执行：生成的Rust代码通过编译可以执行;
+R5. Safe: 遗留unsafe Rust代码需按照最小化原则与safe Rust 代码隔离，并给出相应unsafe代码提示以辅助重构;
+R6. Readability可读性：代码风格满足Rust 代码风格要求；
+R7. Performance性能：采用华为代码（DOPRA内存分配/或者云核Flow项目）验收，与手工改写的Rust代码性能比降低不能超过20%；} ++18 ++17
+    21 0% quality {Challenging Quality}  {R5. Safe ratio安全性比例：Safe Rust代码比例达到30%以上 for the Benchmark of Checked C;
+R7. Performance性能：采用华为代码（DOPRA内存分配/或者云核Flow项目）验收，与手工改写的Rust代码性能比降低不能超过5%；} +18
+#22 resource {演示所需编译支撑模块} @1092.5,1 
+#23 resource {语法语义描述文档} @1092.5,48 
+#24 task {优秀案例} @1092.5,95 
+#25 resource {存储项目试点} @1092.5,142 
+#26 resource {flow项目} @1092.5,189 
+#27 task {社区建设} @1092.5,236 
+#28 resource {短期培训课程} @1092.5,283 
+#29 resource {解决C/C++代码的主要安全问题} @1092.5,330 
+#30 resource {增强集程序样例} @1092.5,377 
+#31 resource {编译模块描述文档} @1092.5,424 
+32 resource {Safe C2Rust Transpiler} @1092.5,471 
+33 resource {AI Machine Translator} @1091,518 
+34 resource {Source-to-Source Transformation System in TXL} @1067.5,566 
+#35 resource {Trustworthy Memory Safe Programming Languages}{内存安全可信编程语言} @1324,471.25  ~>2
+#36 resource {Code Samples for Language Translation}{可由C2Rust转换的代码范例} @1061,632 
