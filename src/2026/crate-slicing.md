@@ -169,17 +169,15 @@ the benefit comes from *parallelism*, not from eliminating work.
 |------|-------|--------|
 | Prototype cargo-slicer and PRECC-Rust | @yijunyu | Done |
 | Measure separate compilation gap across 8 projects | @yijunyu | Done |
-| Write technical paper (ASE 2026 submission) | @yijunyu | In Progress |
-| Formalize soundness requirements for deferred compilation | @yijunyu | Not started |
-| Design stub rlib emission in rustc | TBD | Not started |
-| Prototype deferred root-crate compilation pass | TBD | Not started |
+| Check the MCP on intra-crate analysis [6] | @oli-obk | Started |
+| Design inter-crate analysis | TBD | Not started |
 | Present findings to compiler team | TBD | Not started |
 
 ## Team asks
 
 | Team | Support level | Notes |
 |------|---------------|-------|
-| compiler | Medium | Collaborate on stub rlib design and deferred compilation pass; consult on soundness and rustc internals |
+| compiler | Small | Review the MCP of intra-crate design; Collaborate on inter-crate design |
 | types | Small | Consultation on trait coherence requirements for deferred type-checking |
 | cargo | Small | Feedback on integration with the cargo polyfill toolchain |
 
@@ -225,3 +223,5 @@ Fall back to full crate compilation. Known hard cases: proc-macro crates, heavy
 [4] cargo-slicer: https://github.com/yijunyu/cargo-slicer (proof-of-concept source-level crate slicer)
 
 [5] PRECC paper (ASE 2026, under review): "PRECC: Predictive Precompilation Cutting via Pareto-Optimal Selective Slicing"
+
+[6] MCP on the Rustc, under review, https://github.com/yijunyu/cargo-slicer/blob/main/docs/upstream-rfc.md
